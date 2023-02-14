@@ -1,0 +1,54 @@
+extends layout
+block scripts 
+    script(src="JS/Practice.js", defer) 
+block content
+    div(class="container", id="quiz-container")
+        h1(class="title") #{container_title}
+        div(class="questions")
+            form(action='/insertPractice', method='post', id="quiz-form")
+                input(id="score", name="score")
+                input(id="question", name="question")
+                h2(id="question_number_label")
+                h2(id="question_label")
+                ol(type="A")
+                div(id="answers")
+                    li(class="option")
+                        input(type="submit", id="option0", name="answer", onclick="calcScore(this)")
+                    li(class="option")
+                        input(type="submit", id="option1", name="answer", onclick="calcScore(this)")
+                    li(class="option")
+                        input(type="submit", id="option2", name="answer", onclick="calcScore(this)")
+                    li(class="option")
+                        input(type="submit", id="option3", name="answer", onclick="calcScore(this)")
+        h2(id="stat")
+    img(src="", alt="", id="score-img")
+    div(class="container", id="scoreboard_container")
+        h1(class="title", id="score-title") Your Score
+        h1(class="title", id="score_label")
+        button(id="check-answer", onclick="checkAnswer()") Check Answers
+        button(id="home-page", onclick="HomePage()") Back to home page
+        button(id="home-page", onclick="QuizPage()") Another Practice
+    div(class="container", id="answerBank")
+        table
+            thead
+                tr
+                    th Question
+                    th My Answer
+                    th Answer
+                    th Score
+            tbody(id="this_practice_questions")
+    div(class="container", id="all_questions")
+        table
+            thead 
+                tr
+                    th question 
+                    th answer
+                    th definition
+                    th category
+            tbody
+                each q in Questions_table 
+                    tr(class="practice_questions")
+                        td= q.question
+                        td= q.answer
+                        td= q.definition
+                        td= q.category

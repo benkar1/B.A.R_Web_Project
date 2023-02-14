@@ -1,0 +1,41 @@
+extends layout
+block scripts 
+    script(src="JS/login.js", defer) 
+block content
+    div(class="container", id="login_container")
+        form(class="login-form", action="/Sign_in", method="post")
+            h1(class="title") Login
+            div(class="form__input-group")
+                label(for="username") User Name
+                input(type="text", required, autofocus, placeholder="User name", name="username")
+                label(for="password") Password
+                input(type="password", required, placeholder="Password", name="password")
+            button(class="form-button", type="submit") Login
+            br
+            a(class="form-link", id="linkCreateAccount") Dont Have An Account?
+        form(class="signup-form", id="createAccount", name="createAccount", action="/insertNewUser", method="post", onsubmit="return validate()")
+            h1(class="title") Sign Up
+            div(class="form__input-group")
+                div(class="form-input")
+                    label(for="firstname") First Name
+                    input(type="text", name="SignUpfirstname", id="firstname", required, autofocus, placeholder="First name")
+                    small 
+                div(class="form-input")
+                    label(for="lastname") Last Name
+                    input(type="text", name="SignUplastname", id="lastname", required, placeholder="Last name")
+                    small 
+                div(class="form-input")
+                    label(for="username") User name
+                    input(type="text", name="SignUpusername", id="username", required, placeholder="User name")
+                    small
+                div(class="form-input")
+                    label(for="password") Password
+                    input(type="password" name="SignUppassword" id="password" required, placeholder="Password")
+                    small 
+                div(class="form-input")
+                    label(for="cpassword") Confirm Password
+                    input(type="password", id="cpassword", required, placeholder="Confirm Password")
+                    small                                                                    
+            button(class="form-button", type="submit") Create Account
+            br
+            a(class="form-link", id="linkLogin") Already Have An Account

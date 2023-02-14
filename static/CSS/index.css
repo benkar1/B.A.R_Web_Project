@@ -1,0 +1,348 @@
+
+body{
+    /*
+    body variables
+     */
+    --color-bg: #EEE8AA;
+    --color-primary: #F5DEB3;
+    --color-primary-light: #F5F5DC;
+    --color-secondary: #FFFACD;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 24px;
+    --font-size: 20px;
+    --title-font-size: 40px;
+
+
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+    'nav nav nav'
+    'container1 container2 container3';
+    grid-template-rows: 0% 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+
+    background-image: url('/images/main_page_bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: round;
+    font: 1em 'Quicksand', sans-serif;
+}
+
+
+
+.container{
+    width: fit-content;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: var(--color-bg);
+    display: block;
+    height: fit-content;
+    border: 2px solid black;
+    text-align: center;
+    min-width: 400px;
+    margin-top: 0%;
+    padding: 20px;
+}
+
+/*
+containers style and location
+ */
+#login_container{
+    grid-area: container2;
+    text-align: left;
+}
+
+#about_container{
+    grid-area: container2;
+    font-size: 1.5em;
+    min-width: 600px;
+    background-color: lightcyan;
+}
+
+#home_page_container {
+    grid-area: container2;
+    font-size: 1.5em;
+}
+
+
+#quiz-container, #scoreboard_container, #table_container{
+    grid-area: container2;
+}
+
+#answerBank{
+    grid-area: container1;
+}
+
+
+/*
+titles style
+*/
+h1{
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: var(--title-font-size);
+}
+
+h2{
+    margin-top: 2rem;
+}
+
+
+/*
+button styles
+*/
+button{
+    width: 100%;
+    outline: none;
+    border-radius: var(--border-radius);
+    color: var(--color-primary-light);
+    background-color: darksalmon;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+button:hover{
+   background: var(--color-primary);
+   color: black;
+   cursor: pointer;
+} 
+
+button:active{
+    transform: scale(0.95);
+}
+
+
+/*
+login and sign up forms style
+*/
+.form__input-group{
+    font-size: var(--font-size);
+    margin-bottom: 1.5rem;
+    position: center;
+    color: black;
+}
+
+
+
+.form__input-group input{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding:  5px;
+}
+
+.form__input-group input:focus{
+    outline: 0;
+    border-color: grey;
+}
+
+.success input{
+    border-color: var(--color-success);
+}
+
+
+.error input{
+    border-color: var(--color-error);
+}
+
+
+.form__input-group small{
+    color: var(--color-error);
+    left: 0;
+    visibility: hidden;
+}
+
+
+/*
+form button style
+ */
+ .form-button{
+    background: black; 
+}
+
+.form-button:hover{
+    background: var(--color-primary);
+    color: black;
+}
+
+/*
+form links style
+*/
+.form-link{
+    outline: none;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.form-link:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/*
+navigation style
+ */
+.topnav {
+    grid-area: nav;
+    border: black solid 2px;
+    background-color: var(--color-bg);
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+
+li a{
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+    border: black solid 1.5px;
+    width: 90px;
+    text-align: center;
+    background-color: var(--color-bg);
+}
+
+li a:hover {
+  background-color: var(--color-primary);
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+}
+
+.dropdown-content a{
+    display: block;
+}
+
+
+li:hover .dropdown-content{
+    display: block;
+}
+
+.active {
+    background-color: var(--color-secondary);
+    color: darkcyan;
+    font-weight: bold;
+}
+
+
+/*
+quiz style
+ */
+ #question_label{
+     margin-bottom: 2rem;
+     background-color: var(--color-primary-light);
+     border-radius: var(--border-radius);
+     border: black 1.5px solid;
+ }
+
+ .option{
+     margin-bottom: 1rem;
+     display: block;
+     background: lightblue;
+     color: black;
+     font-size: 1.5rem;
+     border-radius: var(--border-radius);
+ }
+
+ .option:hover{
+    background: var(--color-primary);
+    cursor: pointer;
+ }
+
+
+ li input{
+     border-radius: var(--border-radius);
+     font-size: 1.4rem;
+     width: 100%;
+;
+ }
+
+
+#score{
+     font-size: 4rem;
+}
+
+
+#answerBank li{
+    text-align: left;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: black;
+
+}
+
+
+/*
+tables style
+ */
+
+table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border: 2px solid black;
+    border-radius: var(--border-radius);
+    background-color: lightcyan;
+}
+
+th{
+    border: 1.5px solid black;
+    padding: 12px 15px;
+    background-color: lightskyblue;
+}
+td{
+    border: 1.5px solid black;
+    padding: 12px 10px;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.filter select{
+    max-width: 10em;
+    min-width: 60px;
+}
+
+
+/*
+images style
+*/
+.welcome_img{
+    grid-area: container3;
+    margin-top: 100px;
+    width: 300px;
+    border: 5px dotted black;
+}
+
+#score-img{
+    grid-area: container3;
+    height: 300px;
+    width: 100%;
+    visibility: hidden;
+}
+
+/*
+class to hide elements
+*/
+.hide {
+    display: none;
+}

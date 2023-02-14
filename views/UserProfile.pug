@@ -1,0 +1,28 @@
+extends layout
+block scripts 
+    script(src="JS/UserProfile.js", defer) 
+block content
+    div(class="container", id="table_container")
+        h1(class="title") #{container_title}
+        button(id="home_button", type="submit") Back 
+        div(class="filter")
+        table(id= "practices-table")
+            thead 
+                tr
+                    th time
+                    th category
+                    th question
+                    th answer
+                    th definition
+                    th my answer
+                    th score
+            tbody
+                each p in Practices_table 
+                    tr 
+                        td= `${p.time.getDate()}/${p.time.getMonth()+1}/${p.time.getFullYear()}-  ${p.time.getHours()}:${p.time.getMinutes()}:${p.time.getSeconds()}`
+                        td= p.category
+                        td= p.question
+                        td= p.answer
+                        td= p.definition 
+                        td= p.user_answer
+                        td= p.score

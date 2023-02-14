@@ -1,0 +1,10 @@
+extends layout
+block scripts 
+    script(src="JS/MainPage.js", defer) 
+block content
+    img(class="welcome_img", src="/ICONS/hey_right.jpeg", alt="Welcome to My Website ICON")
+    div(class="container", id="home_page_container")
+        h1(class="title") #{container_title}
+        button(id="practice_button", type="submit") Practice
+        button(id="profile_button", type="submit") Profile
+

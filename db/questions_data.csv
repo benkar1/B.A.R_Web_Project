@@ -1,0 +1,57 @@
+﻿id,question,answer,definition,category
+1,what is the definition of green,green,ירוק,colors
+2,what is the definition of red,red,אדום,colors
+3,what is the definition of yellow,yellow,צהוב,colors
+4,what is the definition of blue,blue,כחול,colors
+5,what is the definition of pink,pink,ורוד,colors
+6,what is the definition of purple,purple,סגול,colors
+7,what is the definition of grey,grey,אפור,colors
+8,what is the definition of white,white,לבן,colors
+9,what is the definition of black,black,שחור,colors
+10,what is the definition of chair,chair,כסא,furniture
+11,what is the definition of table,table,שולחן,furniture
+12,what is the definition of lamp,lamp,מנורה,furniture
+13,what is the definition of door,door,דלת,furniture
+14,what is the definition of box,box,קופסה,furniture
+15,what is the definition of closet,closet,ארון,furniture
+16,what is the definition of tiger,tiger,נמר,animals
+17,what is the definition of elephant,elephant,פיל,animals
+18,what is the definition of horse,horse,סוס,animals
+19,what is the definition of ox,ox,שור,animals
+20,what is the definition of cat,cat,חתול,animals
+21,what is the definition of dog,dog,כלב,animals
+22,what is the definition of lion,lion,אריה,animals
+23,what is the definition of bunny,bunny,ארנב,animals
+24,what is the definition of hamster,hamster,אוגר,animals
+25,what is the definition of fish,fish,דג,animals
+26,what is the definition of shark,shark,כריש,animals
+27,what is the definition of whale,whale,לוויתן,animals
+28,איך רושמים את המילה ירוק,green,ירוק,colors
+29,איך רושמים את המילה אדום,red,אדום,colors
+30,איך רושמים את המילה צהוב,yellow,צהוב,colors
+31,איך רושמים את המילה כחול,blue,כחול,colors
+32,איך רושמים את המילה ורוד,pink,ורוד,colors
+33,איך רושמים את המילה סגול,purple,סגול,colors
+34,איך רושמים את המילה אפור,grey,אפור,colors
+35,איך רושמים את המילה לבן,white,לבן,colors
+36,איך רושמים את המילה שחור,black,שחור,colors
+37,איך רושמים את המילה כסא,chair,כסא,furniture
+38,איך רושמים את המילה שולחן,table,שולחן,furniture
+39,איך רושמים את המילה מנורה,lamp,מנורה,furniture
+40,איך רושמים את המילה דלת,door,דלת,furniture
+41,איך רושמים את המילה קופסה,box,קופסה,furniture
+42,איך רושמים את המילה ארון,closet,ארון,furniture
+43,איך רושמים את המילה נמר,tiger,נמר,animals
+44,איך רושמים את המילה פיל,elephant,פיל,animals
+45,איך רושמים את המילה סוס,horse,סוס,animals
+46,איך רושמים את המילה שור,ox,שור,animals
+47,איך רושמים את המילה חתול,cat,חתול,animals
+48,איך רושמים את המילה כלב,dog,כלב,animals
+49,איך רושמים את המילה אריה,lion,אריה,animals
+50,איך רושמים את המילה ארנב,bunny,ארנב,animals
+51,איך רושמים את המילה אוגר,hamster,אוגר,animals
+52,איך רושמים את המילה דג,fish,דג,animals
+53,איך רושמים את המילה כריש,shark,כריש,animals
+54,איך רושמים את המילה לוויתן,whale,לוויתן,animals
+55,איך רושמים את המילה נחש,snake,נחש,animals
+56,what is the definition of snake,snake,נחש,animals
